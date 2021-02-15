@@ -12,4 +12,4 @@ remainder=$((divident%divisor))
 divident=$divisor
 divisor=$remainder
 done
-echo GCD of 1 and 2 = $divident
+echo GCD of $1 and $2 = $divident

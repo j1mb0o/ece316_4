@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ $# -le 1 ]; then 
+	echo Please give the right arguments 
+	exit 1
+fi
 if [ $1 -gt 20 ]; then
 echo Please enter a number under 20!
 exit 1
