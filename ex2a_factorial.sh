@@ -1,8 +1,16 @@
 #!/bin/bash
-if [ $# -le 1 ]; then 
-	echo Please give the right arguments 
+
+
+if [[ $# -lt 1 || $# -gt 1 ]]; then 
+	echo Please give one number 
 	exit 1
 fi
+
+if [ $1 -lt 0 ]; then
+	echo Please give a positive number
+	exit 1
+fi
+
 if [ $1 -gt 20 ]; then
 echo Please enter a number under 20!
 exit 1
